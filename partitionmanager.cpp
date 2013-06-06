@@ -1542,8 +1542,6 @@ int TWPartitionManager::usb_storage_disable(void) {
 	for (index=0; index<2; index++) {
 		sprintf(lun_file, CUSTOM_LUN_FILE, index);
 		ret = TWFunc::write_file(lun_file, str);
-		Mount_All_Storage();
-		Update_System_Details();
 		if (ret < 0) {
 			break;
 		}
