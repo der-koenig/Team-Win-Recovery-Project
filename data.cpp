@@ -906,7 +906,7 @@ void DataManager::SetDefaultValues()
 	mValues.insert(make_pair("tw_background_thread_running", make_pair("0", 0)));
 	mValues.insert(make_pair(TW_RESTORE_FILE_DATE, make_pair("0", 0)));
 	mValues.insert(make_pair("tw_military_time", make_pair("0", 1)));
-	mValues.insert(make_pair("tw_screen_timeout_secs", make_pair("60", 1)));
+	mValues.insert(make_pair("tw_screen_timeout_secs", make_pair("0", 1)));
 	mValues.insert(make_pair("tw_gui_done", make_pair("0", 0)));
 #ifdef TW_BRIGHTNESS_PATH
 #ifndef TW_MAX_BRIGHTNESS
