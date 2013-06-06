@@ -447,7 +447,7 @@ int TWFunc::write_file(string fn, string& line) {
 	FILE *file;
 	file = fopen(fn.c_str(), "w");
 	if (file != NULL) {
-		fwrite(line.c_str(), line.size(), 1, file);
+		fwrite(line.c_str(), sizeof(char), line.size()+1, file);
 		fclose(file);
 		return 0;
 	}
