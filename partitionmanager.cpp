@@ -1517,11 +1517,11 @@ int TWPartitionManager::usb_storage_enable(void) {
 		} else {
 			// Device has multiple lun files
 			sprintf(lun_file, CUSTOM_LUN_FILE, 0);
-			if (!Open_Lun_File(DataManager::GetSettingsStoragePath(), lun_file))
-				return false;
 			DataManager::GetValue(TW_EXTERNAL_PATH, ext_path);
+			if (!Open_Lun_File(ext_path, lun_file))
+				return false;
 			sprintf(lun_file, CUSTOM_LUN_FILE, 1);
-			return Open_Lun_File(ext_path, lun_file);
+			return Open_Lun_File(DataManager::GetSettingsStoragePath(), lun_file);
 		}
 	} else {
 		if (has_data_media == 0)
