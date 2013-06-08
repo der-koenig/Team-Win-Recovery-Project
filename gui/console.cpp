@@ -279,6 +279,7 @@ int GUIConsole::Update(void)
     {
         // They're still touching, so re-render
         Render();
+        mLastTouchY = -1;
         return 2;
     }
     return 0;
