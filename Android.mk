@@ -78,7 +78,7 @@ endif # HAVE_SELINUX
 # It gets copied there in config/Makefile.  LOCAL_MODULE_TAGS suppresses
 # a (redundant) copy of the binary in /system/bin for user builds.
 # TODO: Build the ramdisk image in a more principled way.
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 
 ifeq ($(TARGET_RECOVERY_UI_LIB),)
   LOCAL_SRC_FILES += default_device.cpp
@@ -268,7 +268,7 @@ include $(BUILD_EXECUTABLE)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := libaosprecovery
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULES_TAGS = optional
 LOCAL_CFLAGS = 
 LOCAL_SRC_FILES = adb_install.cpp bootloader.cpp verifier.cpp

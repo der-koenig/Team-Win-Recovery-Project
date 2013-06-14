@@ -23,7 +23,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_CFLAGS := -O2 -g -DADB_HOST=0 -Wall -Wno-unused-parameter
 LOCAL_CFLAGS += -D_XOPEN_SOURCE -D_GNU_SOURCE
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libminadbd
 
 LOCAL_SHARED_LIBRARIES := libcutils libc

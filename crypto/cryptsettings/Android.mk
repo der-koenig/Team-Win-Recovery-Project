@@ -5,7 +5,7 @@ LOCAL_SRC_FILES:= \
 	cryptsettings.c
 LOCAL_CFLAGS:= -g -c -W
 LOCAL_MODULE:=cryptsettings
-LOCAL_MODULE_TAGS:= eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_SHARED_LIBRARIES += libc libcutils
 LOCAL_STATIC_LIBRARIES += libfs_mgrtwrp
 LOCAL_MODULE_CLASS := UTILITY_EXECUTABLES

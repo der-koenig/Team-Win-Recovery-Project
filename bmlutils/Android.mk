@@ -15,7 +15,7 @@ LOCAL_C_INCLUDES := bootable/recovery/libcrecovery
 
 LOCAL_SRC_FILES := bmlutils.c
 LOCAL_MODULE := libbmlutils
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 include $(BUILD_STATIC_LIBRARY)
 
 #Added for building TWRP dynamic:
@@ -31,5 +31,5 @@ $(foreach board_define,$(BOARD_RECOVERY_DEFINES), \
 
 LOCAL_SRC_FILES := bmlutils.c
 LOCAL_MODULE := libbmlutils
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)

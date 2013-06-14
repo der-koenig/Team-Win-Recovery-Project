@@ -31,7 +31,7 @@ endif
 
 LOCAL_C_INCLUDES += system/extras/ext4_utils external/openssl/include
 LOCAL_MODULE:=cryptfs
-LOCAL_MODULE_TAGS:= eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_SHARED_LIBRARIES += libc libcutils
 LOCAL_SHARED_LIBRARIES += libcrypto
 

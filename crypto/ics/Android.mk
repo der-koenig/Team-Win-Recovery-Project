@@ -3,7 +3,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := libcryptfsics
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULES_TAGS = optional
 LOCAL_CFLAGS = 
 LOCAL_SRC_FILES = cryptfs.c

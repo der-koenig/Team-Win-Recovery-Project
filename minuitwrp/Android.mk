@@ -59,7 +59,7 @@ ifneq ($(BOARD_USE_CUSTOM_RECOVERY_FONT),)
 endif
 LOCAL_SHARED_LIBRARIES += libz libc libcutils
 LOCAL_STATIC_LIBRARIES += libpng libjpegtwrp libpixelflinger_static
-LOCAL_MODULE_TAGS := eng
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := libminuitwrp
 
 include $(BUILD_SHARED_LIBRARY)
