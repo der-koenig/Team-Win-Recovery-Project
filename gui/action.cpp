@@ -1223,6 +1223,7 @@ int GUIAction::doAction(Action action, int isThreaded /* = 0 */)
 					usleep(2000000); // Sleep for 2 seconds before rebooting
 					TWFunc::tw_reboot(rb_system);
 				} else {
+					DataManager::SetValue("tw_script_errorstate", 1);
 					DataManager::SetValue("tw_page_done", 1);
 				}
 			}

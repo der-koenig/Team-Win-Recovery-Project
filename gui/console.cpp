@@ -248,6 +248,11 @@ int GUIConsole::Render(void)
 
 int GUIConsole::Update(void)
 {
+    if (DataManager::GetIntValue("tw_script_errorstate") == 1)
+    {
+        DataManager::SetValue("tw_script_errorstate", 0);
+        mSlideoutState = request_show;
+    }
     if (mSlideout && mSlideoutState != visible)
     {
         if (mSlideoutState == hidden)
